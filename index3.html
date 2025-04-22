@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rupesh - Web Developer Portfolio</title>
+    <style>
+        
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black; 
+            color: burlywood; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; 
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: grey;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px 50px;
+        }
+
+        .hero-greeting {
+            color: grey;
+            margin-bottom: 10px;
+        }
+
+        .hero-title {
+            font-size: 2.5em;
+            color: orange;
+            margin-bottom: 20px;
+        }
+
+        .hero-title::before {
+            content: "{ ";
+        }
+
+        .hero-title::after {
+            content: " }";
+        }
+
+        .background-image {
+            width: 100%;
+            height: -10%;
+            
+            background-size: cover;
+            background-position: center;
+            opacity: 0.6;
+        }
+
+        .about-me-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .about-me-title {
+            font-size: 1.8em;
+            color:skyblue;
+            margin-bottom: 10px;
+        }
+
+        .about-me-title::before {
+            content: "{ ";
+        }
+
+        .about-me-title::after {
+            content: " }";
+        }
+
+        .about-me-description {
+            color: grey;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Rupesh</div>
+        <nav>
+            <ul>
+                <li><a href="#home">_home</a></li>
+                <li><a href="#about">_about</a></li>
+                <li><a href="#portfolio">_portfolio</a></li>
+                <li><a href="#services">_services</a></li>
+                <li><a href="#resume">_resume</a></li>
+                <li><a href="#contact">_contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <p class="hero-greeting">// Hi iam Rupesh, A...</p>
+        <h1 class="hero-title">_web designer</h1>
+    </section>
+
+    <div class="background-image">
+        <img src="image.jpg">
+        </div>
+
+    <section class="about-me-section">
+        <h2 class="about-me-title">about_me</h2>
+        <p class="about-me-description">Web full-stack developer</p>
+        <div class="about-content">
+            <div class="about-text">
+                <p><strong>...I have over 12 years of experience in web development, with a strong background in both front-end and back-end technologies;</strong></p>
+                <button class="button">[read_more]</button>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio-section">
+        <h2 class="portfolio-section">portfolio</h2>
+    </section>
+    <section class="services-section">
+        <h2 class="portfolio-section">services</h2>
+        <p>{"_web designer"}</p>
+        <p>{"_front-end developer"}</p>
+        <p>{"_full-stack developer"}</p>
+        <button class="button">[all_services]</button>
+    </section>
+    <section class="contact-section">
+        <h2 class="contact-section">contact</h2>
+        <div class="box">
+            <input type="text" id="text" name="_name" placeholder="_name"><br>
+            <input type="text" id="text" name="__email" placeholder="_email"><br>
+            <input type="text" id="text" name="_message" placeholder="_message"><br>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 rupesh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
